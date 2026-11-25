@@ -1,8 +1,18 @@
 package modifiers.accessmodifiers;
 
-public class a {
-    public int number = 10;
-    public void display() {
+class a {
+
+    private int number = 10;
+
+    private void display() {
         System.out.println("Hello Java");
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void showMessage() {
+        display();
     }
 }

@@ -1,0 +1,26 @@
+class Student {
+    String stu_name;
+    static String college = "ABS";
+    //static method to change the value of static variable
+    static void change() {
+        college = "NIIS";
+    }
+    Student(String stu_name) {
+        this.stu_name = stu_name;
+    }
+    //method to display values
+    void display() {
+        System.out.println(stu_name + " " + college);
+    }
+}
+public class TestStaticMethod {
+    public static void main(String args[]) {
+        Student s1 = new Student("Amal");
+        Student s2 = new Student("Saman");
+        s1.display();
+        s2.display();
+        Student.change(); //calling change method
+        s1.display();
+        s2.display();
+    }
+}

@@ -9,3 +9,9 @@ In this folder, there are code blocks on OOPFeatures such as;
     - Abstract Classes
     - Interfaces
 4. Encapsulation
+
+# Types of Inheritance in Java.
+
+1. Single
+2. Multilevel
+3. Hierarchial

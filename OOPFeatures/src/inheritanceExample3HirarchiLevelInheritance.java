@@ -1,13 +1,13 @@
-class Animal{
+class DomesticAnimal{
     void eat(){
         System.out.println("eating...");
     }
 }
-class Dog extends Animal{
+class DomesticDog extends DomesticAnimal{
     void bark(){System.out.println("barking...");
     }
 }
-class Cat extends Animal{
+class DomesticCat extends DomesticAnimal{
     void meow(){
         System.out.println("meowing...");
     }
@@ -15,11 +15,11 @@ class Cat extends Animal{
 
 class inheritanceExample3HirarchiLevelInheritance{
     public static void main(String args[]){
-        Cat c=new Cat();
+        DomesticCat c=new DomesticCat();
         c.meow();
         c.eat();
         //c.bark(); Compiler time error
-        Dog d = new Dog();
+        DomesticDog d = new DomesticDog();
         d.bark();
         d.eat();
     }

@@ -6,17 +6,17 @@ public class inheritanceExample3MultiLevelInheritance {
         d.eat();
     }
 }
-class Animal{
+class WildAnimal{
     void eat(){
         System.out.println("eating...");
     }
 }
-class Dog extends Animal{
+class WildDog extends WildAnimal{
     void bark(){
         System.out.println("barking...");
     }
 }
-class BabyDog extends Dog{
+class BabyDog extends WildDog{
     void weep(){
         System.out.println("weeping...");
     }

@@ -1,26 +1,23 @@
 public class constructorOverloading {
-    
-}
-public class Employee {
     int emp_id;
     String emp_name;
     double salary;
 
-    public Employee(int id, String name) {
+    public constructorOverloading(int id, String name) {
         emp_id = id;
         emp_name = name;
     }
-    public Employee(int emp_id, String emp_name, double salary) {
+    public constructorOverloading(int emp_id, String emp_name, double salary) {
         this.emp_id = emp_id;
         this.emp_name = emp_name;
         this.salary = salary;
     }
     public void display() {
-        System.out.println("Employee " + emp_name + " is having id: " + emp_id + " and salary " + salary);
+        System.out.println("constructorOverloading " + emp_name + " is having id: " + emp_id + " and salary " + salary);
     }
     public static void main(String args[]) {
-        Employee emp1 = new Employee(124, " Saman ");
-        Employee emp2 = new Employee(422, " Amali ", 57000);
+        constructorOverloading emp1 = new constructorOverloading(124, " Saman ");
+        constructorOverloading emp2 = new constructorOverloading(422, " Amali ", 57000);
         emp1.display();
         emp2.display();
     }
